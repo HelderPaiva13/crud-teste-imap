@@ -1,3 +1,5 @@
+CREATE DATABASE codeigniter;
+
 USE codeigniter;
 
 CREATE TABLE clientes (

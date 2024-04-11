@@ -1,9 +1,12 @@
-# CodeIgniter 4 Application Starter
+# Detalhes do CRUD
 
-abrir o xampp: /opt/lampp/ depois rodar sudo ./manager-linux-x64.run
+o SQL de criação do banco esta na raiz do projeto #sql-tabela.sql
+
+aqui cria um squema com o nome: codeigniter e uma tabela clientes
+
+Na pasta app/Config/Database.php tem os dados do banco de dados, é só colocar os dados do banco local da maquina
 
 
-# LEMBRAR DE COLOCAR TIMESTEMPS, POR ENQUANTO VOU FAZER SEM
 
 ## What is CodeIgniter?
 
