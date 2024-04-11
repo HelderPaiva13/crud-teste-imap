@@ -21,6 +21,8 @@ Editar o arquivo app/Config/Database.php
 
 $baseURL = 'http://localhost:8080/', ou seja rodar na porta 8080
 
+apos as configurações feitas só abrir o terminal e rodar o comando: php spark serve
+
 
 ## What is CodeIgniter?
 
