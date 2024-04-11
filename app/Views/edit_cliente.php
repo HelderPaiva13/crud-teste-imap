@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html>
+  <?= $this->extend('layout') ?>
 
-<head>
-  <title>Codeigniter 4 CRUD (Create, Read, Update and Delete) with Bootstrap and Datatables</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-  <style>
-    .error {
-      display: block;
-      padding-top: 5px;
-      font-size: 14px;
-      color: red;
-    }
-  </style>
-</head>
-
-<body>
+  <?= $this->section('content'); ?>
   <div class="container">
-    <p>
-    <h1>Editar Cliente</h1>
-    </p>
+    <div>
+      <p>
+      <h1>Editar Cliente</h1>
+      </p>
+    </div>
+
     <div class="row">
       <div class="col-2"></div>
       <div class="col-8">
@@ -139,6 +128,4 @@
       }, "CPF inválido.");
     }
   </script>
-</body>
-
-</html>
+  <?= $this->endSection() ?>

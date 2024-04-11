@@ -1,77 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRUD Layout</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> CRUD</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+  <style>
+    .error {
+      display: block;
+      padding-top: 5px;
+      font-size: 14px;
+      color: red;
+    }
+
+    .my-custom-section {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      margin-top: 1rem;
+      border-radius: 5px;
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">CRUD Layout</h1>
-    <div class="row">
-      <!-- Create/Update Form -->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header bg-primary text-white">
-            Create/Update Form
-          </div>
-          <div class="card-body">
-            <!-- Form fields here -->
-            <form id="crudForm">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name">
-              </div>
-              <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" name="address">
-              </div>
-              <!-- Add more fields as needed -->
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- Data Table -->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header bg-success text-white">
-            Data Table
-          </div>
-          <div class="card-body">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <!-- Add more headers as needed -->
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Table rows with data -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+  <div class="container mt-4">
+    <div class="my-custom-section">
+      <h2>Minha Seção Personalizada</h2>
+      <p>Algum texto de introdução ou outras informações.</p>
     </div>
+
+    <?php
+    if (isset($_SESSION['msg'])) {
+      echo $_SESSION['msg'];
+    }
+    ?>
+    <?= $this->renderSection('content') ?>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Meu LinkedIn: <a href="https://www.linkedin.com/seu-perfil" target="_blank">Seu Perfil</a></p>
+        <p>Meu GitHub: <a href="https://github.com/seu-usuario" target="_blank">Seu Usuário</a></p>
+        <p>Email: seu-email@example.com</p>
+      </div>
+    </footer>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Custom JS for CRUD operations -->
-  <script>
-    $(document).ready(function() {
-      // Your CRUD operations JS code here
-    });
-  </script>
+
+
 </body>
 
 </html>
