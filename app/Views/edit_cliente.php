@@ -4,7 +4,7 @@
   <div class="container">
     <div>
       <p>
-      <h1>Editar Cliente</h1>
+      <h2>Editar Cliente</h2>
       </p>
     </div>
 
@@ -40,8 +40,8 @@
           </div>
 
           <div class="form-group"> <br />
-            <button type="submit" class="btn btn-info btn-block">Salvar</button>
-            <a href="<?php echo site_url('/cliente-list') ?>" class="btn btn-secondary">Voltar</a>
+            <button type="submit" class="btn btn-outline-primary btn-block">Salvar</button>
+            <a href="<?php echo site_url('/cliente-list') ?>" class="btn btn-outline-secondary">Voltar</a>
           </div>
         </form>
       </div>

@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <div class="container">
   <p>
-  <h1>Adicionar Cliente</h1>
+  <h2>Adicionar Cliente</h2>
   </p>
   <div class="row">
     <div class="col-2"></div>
@@ -35,8 +35,8 @@
         </div>
 
         <div class="form-group"><br />
-          <button type="submit" class="btn btn-primary btn-block">Salvar</button>
-          <a href="<?php echo site_url('/cliente-list') ?>" class="btn btn-secondary">Voltar</a>
+          <button type="submit" class="btn btn-outline-primary btn-block">Salvar</button>
+          <a href="<?php echo site_url('/cliente-list') ?>" class="btn btn-outline-secondary">Voltar</a>
         </div>
       </form>
     </div>
