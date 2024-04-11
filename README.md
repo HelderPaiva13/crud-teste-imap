@@ -1,10 +1,23 @@
-# Detalhes do CRUD
+# projeto CRUD em PHP - Usando Codeigniter, Bootstrap e Mysql
 
-o SQL de criação do banco esta na raiz do projeto #sql-tabela.sql
-
+# Configuração do Projeto
+o SQL de criação do banco esta na raiz do projeto  sql-tabela.sql
 aqui cria um squema com o nome: codeigniter e uma tabela clientes
 
-Na pasta app/Config/Database.php tem os dados do banco de dados, é só colocar os dados do banco local da maquina
+Editar app/Config/Database.php
+
+`
+        'hostname'     => 'nomeDoHost',
+        
+        'username'     => 'usuarioDoMysql',
+        
+        'password'     => 'senhaDoUsuario',
+        
+        'database'     => 'NomeDaTabela',
+        
+        'DBDriver'     => 'MySQLi',
+        
+`
 
 
 
