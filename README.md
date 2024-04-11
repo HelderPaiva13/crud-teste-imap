@@ -4,7 +4,7 @@
 o SQL de criação do banco esta na raiz do projeto  sql-tabela.sql
 aqui cria um squema com o nome: codeigniter e uma tabela clientes
 
-Editar app/Config/Database.php
+Editar o arquivo app/Config/Database.php
 
 `
         'hostname'     => 'nomeDoHost',
